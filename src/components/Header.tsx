@@ -32,11 +32,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">
-            <div className={`transition-all duration-300 ${
-              isScrolled ? "" : "brightness-0 invert"
-            }`}>
-              <img src={logoGisi} alt="GISI - Associazione Imprese Italiane di Strumentazione" className="h-10 w-auto" />
-            </div>
+            <img src={logoGisi} alt="GISI - Associazione Imprese Italiane di Strumentazione" className="h-14 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

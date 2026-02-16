@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import logoGisi from "@/assets/logo-gisi.png";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
@@ -31,15 +32,10 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">
-            <div className={`text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? "text-primary" : "text-primary-foreground"
+            <div className={`transition-all duration-300 ${
+              isScrolled ? "" : "brightness-0 invert"
             }`}>
-              GISI
-            </div>
-            <div className={`hidden sm:block text-sm transition-colors duration-300 ${
-              isScrolled ? "text-muted-foreground" : "text-primary-foreground/80"
-            }`}>
-              Iniziativa Digitale
+              <img src={logoGisi} alt="GISI - Associazione Imprese Italiane di Strumentazione" className="h-10 w-auto" />
             </div>
           </a>
 
